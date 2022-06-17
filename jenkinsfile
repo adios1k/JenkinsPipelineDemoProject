@@ -7,7 +7,7 @@ stage('Build')
 {
 steps{
 echo "Building the Code.........."
-sh 'export MAVEN_HOME=/usr/local/bin/mvn'
+sh 'export PATH=/usr/local/bin/mvn:$PATH'
 sh 'mvn clean'
 }
 }
